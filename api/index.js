@@ -19,10 +19,7 @@ app.use(express.json())
 app.use('/images', express.static('images'))
 app.use(logger)
 
-// GET root
-app.get('/', (req, res) => {
-  res.send('<h1> Hello! (☞ﾟヮﾟ)☞ </h1>')
-})
+app.use(express.static('../app/build'))
 
 app.use('/api/notes', notesRouter)
 app.use('/api/users', usersRouter)

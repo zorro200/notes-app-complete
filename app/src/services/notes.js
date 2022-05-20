@@ -4,7 +4,7 @@ import axios from 'axios'
  * URL where are our notes in back-end.
  * @type {*}
  */
-const baseUrl = 'http://localhost:3001/api/notes'
+const baseUrl = '/api/notes'
 
 /**
  * Get all notes from back-end
