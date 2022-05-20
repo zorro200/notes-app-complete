@@ -65,7 +65,7 @@ notesRouter.post('/', userExtractor, async (req, res) => {
   const user = await User.findById(userId)
 
   const newNote = new Note({
-    content: content,
+    content,
     date: new Date().toISOString(),
     important: typeof important === 'undefined' ? false : important,
     user: user._id

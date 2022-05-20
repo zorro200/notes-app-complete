@@ -20,6 +20,7 @@
     "standard": "17.0.0"
   },
   "eslintConfig": {
+    "ignorePatterns": "build",
     "extends": ".\\node_modules\\standard\\eslintrc.json"
   },
   "keywords": [],
