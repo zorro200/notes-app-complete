@@ -11,7 +11,10 @@
     "yarn": "1.22.17"
   },
   "scripts": {
-    "lint": "standard .\\app .\\api"
+    "lint": "standard .\\app .\\api",
+    "build": "yarn workspace api build app",
+    "start": "yarn workspace api start",
+    "dev:api": "yarn workspace api build && yarn workspace api dev"
   },
   "devDependencies": {
     "standard": "17.0.0"
