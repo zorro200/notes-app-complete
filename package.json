@@ -1,0 +1,25 @@
+{
+  "name": "notes-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "engines": {
+    "yarn": "1.22.17"
+  },
+  "scripts": {
+    "lint": "standard .\\app .\\api"
+  },
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": ".\\node_modules\\standard\\eslintrc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
