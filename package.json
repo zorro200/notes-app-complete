@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "standard .\\app .\\api",
-    "build": "yarn workspace api build app",
+    "build": "yarn workspace app build",
     "start": "yarn workspace api start",
     "dev:api": "yarn workspace api build && yarn workspace api dev"
   },
