@@ -14,7 +14,7 @@
     "lint": "standard .\\app .\\api",
     "build": "yarn workspace app build",
     "start": "yarn workspace api start",
-    "dev:api": "yarn workspace api build && yarn workspace api dev"
+    "dev:api": "yarn workspace app build && yarn workspace api dev"
   },
   "devDependencies": {
     "standard": "17.0.0"
