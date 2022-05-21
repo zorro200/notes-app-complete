@@ -4,8 +4,9 @@
     "git reset .": "Restore all the files to the unstaged (unprepared) state for their commit (undo git add (with(out) .)",
     "git remote add origin [url.git]": "Adds the remote repository",
     "git remote show [remote to show]": "Will show all the possible remotes; if you put the origin that you want to show, it'll show you information about it (such as the urls)",
-    "heroku create": "creates the Heroku app, a remotre called heroku and associates it to our local git repository",
+    "heroku create [app-name]": "creates the Heroku app, a remotre called heroku and associates it to our local git repository",
     "git push heroku main": "push branch 'main' to origin 'heroku' and deploy our app",
-    "heroku logs": "show all Heroku logs; contains requests"
+    "heroku logs": "show all Heroku logs; contains requests",
+    "yarn workspace [worksapce-name] command": "execute a command from one of the workspaces"
   }
 ]
