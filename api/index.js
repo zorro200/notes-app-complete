@@ -4,6 +4,7 @@ require('./mongo')
 
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 const app = express()
 const logger = require('./middleware/loggerMiddleware')
 const notFound = require('./middleware/notFound')
@@ -20,6 +21,10 @@ app.use('/images', express.static('images'))
 app.use(logger)
 
 app.use(express.static('../app/build'))
+
+app.get('*', (request, response) => {
+  response.sendFile(path.join(__dirname, '../app/build', 'index.html'))
+})
 
 app.use('/api/notes', notesRouter)
 app.use('/api/users', usersRouter)
