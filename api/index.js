@@ -22,7 +22,7 @@ app.use(logger)
 
 app.use(express.static('../app/build'))
 
-app.get('*', (request, response) => {
+app.get('/*', (request, response) => {
   response.sendFile(path.join(__dirname, '../app/build', 'index.html'))
 })
 
