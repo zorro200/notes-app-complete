@@ -22,13 +22,13 @@ app.use(logger)
 
 app.use(express.static('../app/build'))
 
-app.get('/notes', (request, response) => {
-  response.sendFile(path.join(__dirname, '../app/build', 'index.html'))
-})
-
 app.use('/api/notes', notesRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
+
+app.get('/*', (request, response) => {
+  response.sendFile(path.join(__dirname, '../app/build', 'index.html'))
+})
 
 // Errors handler middlewares (always after the others main paths)
 // Will be executed if none rute equals to the requested
